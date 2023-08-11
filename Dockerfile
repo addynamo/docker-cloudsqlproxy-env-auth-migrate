@@ -1,5 +1,4 @@
-# use specific flyway version that supports MySQL 5.7
-FROM flyway/flyway:7
+FROM flyway/flyway:latest
 
 USER root 
 
