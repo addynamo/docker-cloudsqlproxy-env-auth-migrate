@@ -28,6 +28,8 @@ echo -e "${GREEN}Starting CloudSQL Proxy!${NC}"
 CLOUDSQL_PID=$!
 echo -e "${GREEN}CloudSQL Started with PID: $CLOUDSQL_PID!${NC}"
 
+ls
+
 echo -e "${GREEN}Waiting for CloudSQL Proxy to listen on port $PORT!${NC}"
 ./startup-check.sh
 tail /tmp/output.log
